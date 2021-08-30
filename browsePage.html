@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="browseStyles.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="nav" id="nav">
+        <a href="/"><img src="netflix-images/netflix-logo.png" alt="" class="nav__logo"></a>
+        <img src="netflix-images/netflix-avatar.png" alt="" class="nav__avatar">
+    </div>
+
+    <!-- Header -->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">Watch Joker Now</h1>
+            <div class="banner__description">
+                Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him.
+            </div>
+            <div class="banner__buttons">
+                <button class="banner__button" onclick="toggle()">Play</button>
+               
+                <div class="video" style="max-width: 100%; margin: 0;" onclick="toggle()">
+                    <video src="JOKER - Teaser 1.mp4" autostart type="video/mp4" controls width="700" muted></video>
+                </div>
+                
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>
+    
+    <!-- Thriller -->
+    <div class="row">
+        <h2>Thriller</h2>
+        <div class="row__posters">
+            <!-- <img src="netflix-images/large-movie1.jpg" alt="" class="row__poster row__posterLarge"> -->
+            <img src="netflix-images/large-movie2.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/large-movie3.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/large-movie4.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/large-movie5.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/large-movie6.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/large-movie7.jpg" alt="" class="row__poster row__posterLarge">
+            <img src="netflix-images/large-movie8.jpg" alt="" class="row__poster row__posterLarge">        
+        </div>
+    </div>
+
+    <!-- Drama -->
+    <div class="row">
+        <h2>Drama</h2>
+
+        <div class="row__posters">
+            <img src="netflix-images/Fight-Club-Featured.jpg" alt="" class="row__poster">
+            <img src="netflix-images/small-movie2.jpg" alt="" class="row__poster">
+            <img src="netflix-images/small-movie3.jpg" alt="" class="row__poster">
+            <!-- <img src="netflix-images/small-movie4.jpg" alt="" class="row__poster"> -->
+            <img src="netflix-images/small-movie5.jpg" alt="" class="row__poster">
+            <img src="netflix-images/small-movie6.jpg" alt="" class="row__poster">
+            <img src="netflix-images/small-movie7.jpg" alt="" class="row__poster">
+            <img src="netflix-images/small-movie8.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+
+    <!-- Children -->
+    <div class="row">
+        <h2>Children</h2>
+
+        <div class="row__posters">
+            <img src="netflix-images/minions.jpg" alt="" class="row__poster">
+            <img src="netflix-images/hotel.jpg" alt="" class="row__poster">
+            <img src="netflix-images/wish-dragon.jpg" alt="" class="row__poster">
+            <img src="netflix-images/small-movie4.jpg" alt="" class="row__poster">
+            <img src="netflix-images/miraculous.jpg" alt="" class="row__poster">
+            <img src="netflix-images/boss-baby.jpg" alt="" class="row__poster">
+            <img src="netflix-images/lastkid.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+
+    <!-- Suspense  -->
+    <div class="row">
+        <h2>Suspense</h2>
+        <div class="row__posters">
+            <img src="netflix-images/things.jpg" alt="" class="row__poster">
+            <img src="netflix-images/shadow.jpg" alt="" class="row__poster">
+            <img src="netflix-images/fall.jpg" alt="" class="row__poster">
+            <img src="netflix-images/woman.jpg" alt="" class="row__poster">
+            <img src="netflix-images/sightless.jpg" alt="" class="row__poster">
+            <img src="netflix-images/inception.png" alt="" class="row__poster">
+            <img src="netflix-images/delhicrime.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+
+    <!-- Romance  -->
+    <div class="row">
+        <h2>Romance</h2>
+        <div class="row__posters">
+            <img src="netflix-images/kiss.jpg" alt="" class="row__poster">
+            <img src="netflix-images/crazy.jpg" alt="" class="row__poster">
+            <img src="netflix-images/boyslove.jpg" alt="" class="row__poster">
+            <img src="netflix-images/ptani.jpg" alt="" class="row__poster">
+            <img src="netflix-images/guenersey.jpg" alt="" class="row__poster">
+            <img src="netflix-images/brightplaces.jpg" alt="" class="row__poster">
+            <img src="netflix-images/afterwecollided.jpg" alt="" class="row__poster">
+            <img src="netflix-images/resorttolove.jpg" alt="" class="row__poster">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Questions? Call 000-800-040-1843</p>
+        <br>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Netflix India</p>
+    </footer>
+
+    <script>
+        let nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100){
+                nav.classList.add('nav__black');
+            } else {
+                nav.classList.remove('nav__black');
+            }
+        })
+
+        function toggle(){
+            var vid = document.querySelector(".video");
+            var v = document.querySelector("video");
+
+            vid.classList.toggle("active");
+            v.pause();
+            v.currentTime = 0;
+        }
+
+    </script>
+</body>
+</html>
